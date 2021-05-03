@@ -16,3 +16,7 @@
 .close-button:hover{
     opacity: 1;
 }
+
+.tags.uppercase{
+    text-transform: uppercase;
+}
