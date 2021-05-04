@@ -20,3 +20,8 @@
 .tags.uppercase{
     text-transform: uppercase;
 }
+
+#canvas {
+    display: block; 
+    position: fixed; 
+  }
