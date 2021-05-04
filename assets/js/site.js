@@ -79,7 +79,7 @@ var canvasLightning = function(c, cw, ch){
         while(i--){
           var light = this.lightning[i];
           
-          this.ctx.strokeStyle = 'hsla(0, 100%, 50%, '+this.rand(10, 100)/100+')';
+          this.ctx.strokeStyle = 'hsla(45, 100%, 52%, '+this.rand(10, 100)/100+')';
           this.ctx.lineWidth = 1;
           if(this.rand(0, 30) == 0){
             this.ctx.lineWidth = 2; 
