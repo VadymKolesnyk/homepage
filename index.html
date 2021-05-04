@@ -17,8 +17,8 @@
     <meta property="og:title" content="The Flash &mdash; Résumé">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vadymkolesnyk.github.io/homepage/">
-    <base href="https://vadymkolesnyk.github.io/homepage/">
     <title>The Flash &mdash; Résumé</title>
+    <link rel="shortcut icon" href="./assets/images/avatar.svg" type="image/svg">
     <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
     <link rel="stylesheet" href="./assets/stylesheet/styles.css">
   </head>
@@ -26,10 +26,11 @@
     <dialog id="arrowverse">
       <a href="#resume" title="Hide arrowverse timeline" class="close-button"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.76 511.76" style="enable-background:new 0 0 511.76 511.76;" xml:space="preserve"> <g><path d="M436.896,74.869c-99.84-99.819-262.208-99.819-362.048,0c-99.797,99.819-99.797,262.229,0,362.048 c49.92,49.899,115.477,74.837,181.035,74.837s131.093-24.939,181.013-74.837C536.715,337.099,536.715,174.688,436.896,74.869z M361.461,331.317c8.341,8.341,8.341,21.824,0,30.165c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251 l-75.413-75.435l-75.392,75.413c-4.181,4.16-9.643,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251 c-8.341-8.341-8.341-21.845,0-30.165l75.392-75.413l-75.413-75.413c-8.341-8.341-8.341-21.845,0-30.165 c8.32-8.341,21.824-8.341,30.165,0l75.413,75.413l75.413-75.413c8.341-8.341,21.824-8.341,30.165,0 c8.341,8.32,8.341,21.824,0,30.165l-75.413,75.413L361.461,331.317z"/></g> </svg></a>
       <div class="photos">
-        <img src="./assets/images/flash-arrowverve-timeline.jpg" alt="Me as a baby">
+        <img src="./assets/images/flash-arrowverve-timeline.jpg" alt="flash-arrowverve-timeline">
       </div>
     </dialog>
     <main>
+      <canvas id="canvas"></canvas>
       <article>
         <div class="page main-page" style="border-color: #F43735;">
           <div class="stackable grid">
@@ -43,7 +44,7 @@
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">The Flash<strong style="margin-left: 0.0625em;">*</strong></h1>
-                    <div class="job">superhero</div>
+                    <div class="job">Superhero🦸</div>
                     <ul class="contacts">
                       <li>
                         <a href="https://en.wikipedia.org/wiki/Justice_League" rel="contact">
@@ -70,7 +71,7 @@
                         </a>
                       </li>
                     </ul> 
-                    <p>In general, you don't need to call <strong>Flash</strong> for no reason, if you need him - he will come running before you can blink.</p>
+                    <p>In general, you don't need to call <strong>Flash</strong> for no reason, if you need him - he will come running before you can blink. ⚡</p>
                     <p style="opacity: 0.75;"><strong style="margin-right: 0.0625em;">*</strong> Not to be confused with <a href="https://www.adobe.com/products/flashplayer/end-of-life.html" rel="external">Adobe Flash Player</a></p>  
                   </div>
                   <div class="sixteen wide mobile only column">
@@ -78,7 +79,14 @@
                   </div>
                   <div class="sixteen wide column">
                     <h2>Résumé</h2>
-                    <p>My name is Barry Allen, and I am the fastest man alive. To the outside world, I’m an ordinary forensic scientist, but secretly, with the help of my friend at S.T.A.R Labs, I fight crime and find other meta-humans like me. <strong>I am the Flash.</strong></p>
+                    <p>My name is Barry Allen, and I am the fastest man alive. To the outside world, I’m an ordinary forensic scientist, but secretly, with the help of my friend at S.T.A.R Labs, I fight crime and find other meta-humans like me. 
+                    <button id="the-flash" class="audio">
+                      <audio preload="none"> 
+                        <source src="./assets/sounds/I am The Flash.mp3" type="audio/mpeg">
+                        </audio>
+                      <strong>I am the Flash.</strong>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M576 256c0 100.586-53.229 189.576-134.123 239.04-7.532 4.606-17.385 2.241-21.997-5.304-4.609-7.539-2.235-17.388 5.304-21.997C496.549 424.101 544 345.467 544 256c0-89.468-47.452-168.101-118.816-211.739-7.539-4.609-9.913-14.458-5.304-21.997 4.608-7.539 14.456-9.914 21.997-5.304C522.77 66.424 576 155.413 576 256zm-96 0c0-66.099-34.976-124.572-88.133-157.079-7.538-4.611-17.388-2.235-21.997 5.302-4.61 7.539-2.236 17.388 5.302 21.998C418.902 152.963 448 201.134 448 256c0 54.872-29.103 103.04-72.828 129.779-7.538 4.61-9.912 14.459-5.302 21.998 4.611 7.541 14.462 9.911 21.997 5.302C445.024 380.572 480 322.099 480 256zm-138.14-75.117c-7.538-4.615-17.388-2.239-21.998 5.297-4.612 7.537-2.241 17.387 5.297 21.998C341.966 218.462 352 236.34 352 256s-10.034 37.538-26.841 47.822c-7.538 4.611-9.909 14.461-5.297 21.998 4.611 7.538 14.463 9.909 21.998 5.297C368.247 314.972 384 286.891 384 256s-15.753-58.972-42.14-75.117zM256 88.017v335.964c0 21.436-25.942 31.999-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954C230.037 56.038 256 66.551 256 88.017zm-32 19.311l-77.659 77.644A24.001 24.001 0 0 1 129.372 192H32v128h97.372a24.001 24.001 0 0 1 16.969 7.028L224 404.67V107.328z"></path></svg>
+                      </p>
                   </div>
                 </div>
               </div>
@@ -90,11 +98,10 @@
             </div>
             <div class="row">
               <div class="ten wide column">
-                <h3>Publication history</h3>
-                <h6>Recent</h6>
+                <h3>Publication history 📆</h3>
                 <ul class="timeline"></ul>
                   <li class="highlighted">
-                    <h4><p><em>Volume 1 <sup>(1959–1985)</sup></em></p></h4>
+                    <h4><p>🕐<em> Volume 1 <sup>(1959–1985)</sup></em></p></h4>
                     <p>One of the most notable issues of this era was issue #123 <em>(September 1961)</em>, which featured the story titled <strong>"Flash of Two Worlds"</strong>. In it, Allen meets his inspiration <strong>Jay Garrick</strong>, after accidentally being transported to a parallel universe where Garrick existed. In this previous continuity, Garrick and the other characters of the <strong>Golden Age</strong> only existed as comics characters in the mainline shared universe. This brought about a new concept in the formative stage of what would become the DC Universe, and gave birth to the current conceptualization featuring it as a multiverse.</p>
                     <p>Shortly before Barry Allen's death in <strong>Crisis on Infinite Earths</strong>, the series was cancelled with issue #350 <em>(October 1985)</em>. In the final issue of Crisis on Infinite Earths, <strong>Wally West</strong>, previously known as Allen's sidekick <strong>Kid Flash</strong>, stated his intent to take up his uncle's mantle as the Flash.</p>
                     <div class="details">
@@ -111,7 +118,7 @@
                       </div>
                   </li>
                   <li class="bordered">
-                    <h4><p><em>Volume 2 <sup>(1987–2006, 2007–2008)</sup></em></p></h4>
+                    <h4><p>🕒<em> Volume 2 <sup>(1987–2006, 2007–2008)</sup></em></p></h4>
                     <p>The second volume originally went in a different direction from the series starring <strong>Barry Allen</strong> by making <strong>Wally West</strong> a public figure with no secret identity, as well as making him more flawed: this Flash could not constantly maintain his super-speed because of his hypermetabolism, and would consume gargantuan amounts of food in order to continue operating at top speed.</p>
                     <p>To help take Wally out of Barry and Jay's shadows, authors made him much more powerful than either of his predecessors by introducing an extradimensional energy source referred to as the <strong>"Speed Force"</strong>, through which he could channel near-limitless energy; the Speed Force has since become a cornerstone of Flash mythology.</p>
                     <div class="details">
@@ -125,7 +132,7 @@
                   </li>
                   
                   <li class="highlighted">
-                    <h4><p><em>Volume 3 <sup>(2010–2011)</sup></em></p></h4>
+                    <h4><p>🕔<em> Volume 3 <sup>(2010–2011)</sup></em></p></h4>
                     <p>Spinning out of <strong>Final Crisis</strong>, writer <em>Geoff Johns</em> and artist <em>Ethan Van Sciver</em> created <strong>The Flash: Rebirth</strong>, a 6-issue mini-series bringing Barry Allen back to a leading role in the DC Universe as the primary Flash.</p>
                     <div class="details">
                       <input type="checkbox" id="vol-3-keywords">
@@ -137,7 +144,20 @@
                   </li>
 
                   <li class="bordered">
-                    <h4><p><em>Volume 5 <sup>(2016–2020)</sup></em></p></h4>
+                    <h4><p>🕖<em> Volume 4 <sup>(2011–2016)</sup></em></p></h4>
+                    <p>In <em>September 2011</em>, The <strong>New 52</strong> rebooted DC's continuity. In this new timeline, DC Comics relaunched <strong>The Flash</strong> with issue #1. As with all of the titles associated with the DC relaunch, <strong>Barry Allen</strong> appears to be about five years younger than the previous incarnation of the character. Superheroes at large have appeared only in the past five years, and are viewed with at best, suspicion, and at worst, outright hostility. In this new continuity, Barry's marriage to <strong>Iris West</strong> never took place, and he is instead in a relationship with longtime co-worker <strong>Patty Spivot</strong>. In this new series, the Flash draws deeper into the <strong>Speed Force</strong>, enhancing his mental abilities while still trying to get a full grasp on his powers, which he doesn't yet exert total control over.</p>
+                    <div class="details">
+                      <input type="checkbox" id="vol-4-keywords">
+                      <label for="vol-4-keywords" class="summary">Keywords</label>
+                      <div class="labels">
+                        <a rel="external" class="label" href="https://en.wikipedia.org/wiki/The_New_52">The New 52</a>
+                        <a rel="external" class="label" href="https://en.wikipedia.org/wiki/Iris_West">Iris Westh</a>   
+                        <a rel="external" class="label" href="https://en.wikipedia.org/wiki/Patty_Spivot">Patty Spivot</a>   
+                      </div>
+                  </li>
+
+                  <li class="highlighted">
+                    <h4><p>🕘<em> Volume 5 <sup>(2016–2020)</sup></em></p></h4>
                     <p>This volume once again starred <strong>Barry Allen</strong>, carrying over from the <strong>New 52</strong> volume, but also featured various other speedsters as supporting characters. Among them was the original incarnation of <strong>Wally West</strong>, who was revealed to have been lost in the <strong>Speed Force</strong> and erased from everyone's memories; the <strong>New 52</strong> incarnation, thereafter mainly referred to as <strong>Wallace West</strong>, was retconned to be a separate character with the same name and gained a superhero identity as the new <strong>Kid Flash</strong>.</p>
                     <div class="details">
                       <input type="checkbox" id="vol-4-keywords">
@@ -147,8 +167,8 @@
                       </div>
                   </li>
 
-                  <li class="highlighted">
-                    <h4><p><em>Volume 1 restored <sup>(2020-present)</sup></em></p></h4>
+                  <li class="bordered">
+                    <h4><p>🕚<em> Volume 1 restored <sup>(2020-present)</sup></em></p></h4>
                     <p>Original numbering on <strong>The Flash</strong> began with an oversized celebratory issue #750 <em>(May 2020)</em>. However, the series continued otherwise uninterrupted from where volume 5 had left off.</p>
                   </li>
                   <li> 
@@ -158,18 +178,17 @@
                       <span class="dot"></span>
                       <span class="dot"></span>
                     </span>
-                    <em>If you are not interested in a straightforward story, then you can dare to understand <strong>the timeline of the Flash from the Arrowverse</strong>.</em>
-                  </a></li>
+                    <em>If you are not interested in a straightforward story, then you can dare to understand <strong>the timeline of the Flash from the Arrowverse</strong>.</em> 🤯                  </a></li>
                 </ul>
                                
               </div>
               <div class="six wide column">
                 <section>
-                  <h3>Abilities</h3>
+                  <h3>Abilities 👨‍🔬</h3>
                   <p class="tags small uppercase">Acrobatics Adaptability Chemistry Criminology Disguise Firearms <span class="nowrap">Forensic Pathology</span> <span class="nowrap">Genius Level Intellect</span> <span class="nowrap">Mechanical Engineering</span> Computer Operation <span class="nowrap">Hand-to-Hand Combat</span> (Boxing Judo Karate Wrestling) <span class="nowrap">Indomitable Will</span> Investigation <span class="nowrap">Tactical Analysis</span> Stealth Weaponry (Swordsmanship)</p>
                 </section>
                 <section>
-                  <h3>Super powers</h3>
+                  <h3>Super powers 💪</h3>
                   <p class="tags small uppercase">
                     <span class="nowrap">Speed Force Conduit</span>
                     <span class="nowrap">Superhuman Speed</span>
@@ -210,34 +229,34 @@
                 </section>
 
                 <section>
-                  <h3>Enemies</h3>
-                  <p class="tags small uppercase">
-                    <span class="nowrap">The Shade</span>
-                    <span class="nowrap">The Rag Doll</span>
-                    <span class="nowrap">The Eel</span>
-                    <span class="nowrap">The Thinker</span>
-                    <span class="nowrap">The Turtle</span>
-                    Dmane
-                    <span class="nowrap">The Changeling</span>
-                    <span class="nowrap">Rose and the Thorn</span>
-                    <span class="nowrap">The Fiddler</span>
-                    <span class="nowrap">Star Sapphire</span>
-                    <span class="nowrap">The Rival</span>
-                    Mazdan
-                    <span class="nowrap">The Brain</span>
-                    <span class="nowrap">The Bredans</span>
-                    <span class="nowrap">Captain Cold</span>
-                    <span class="nowrap">The Cloud Creatures</span>
-                    <span class="nowrap">Doctor Alchemy</span>
-                    <span class="nowrap">The Dokris</span>
-                    <span class="nowrap">The Maugites</span>
-                    <span class="nowrap">The Mirror Master</span>
-                    <span class="nowrap">Gorilla Grodd</span>
-                    <span class="nowrap">The Pied Piper</span>
-                    <span class="nowrap">The Weather Wizard</span>
-                    <span class="nowrap">The Trickster</span>
-                    Zoom
-                    Revers 
+                  <h3>Enemies 🦹</h3>
+                  <p class="tags small uppercase bulleted">
+                    <span class="tag nowrap">The Shade</span>
+                    <span class="tag nowrap">The Rag Doll</span>
+                    <span class="tag nowrap">The Eel</span>
+                    <span class="tag nowrap">The Thinker</span>
+                    <span class="tag nowrap">The Turtle</span>
+                    <span class="tag">Dmane</span>
+                    <span class="tag nowrap">The Changeling</span>
+                    <span class="tag nowrap">Rose and the Thorn</span>
+                    <span class="tag nowrap">The Fiddler</span>
+                    <span class="tag nowrap">Star Sapphire</span>
+                    <span class="tag nowrap">The Rival</span>
+                    <span class="tag">Mazdan</span>
+                    <span class="tag nowrap">The Brain</span>
+                    <span class="tag nowrap">The Bredans</span>
+                    <span class="tag nowrap">Captain Cold</span>
+                    <span class="tag nowrap">The Cloud Creatures</span>
+                    <span class="tag nowrap">Doctor Alchemy</span>
+                    <span class="tag nowrap">The Dokris</span>
+                    <span class="tag nowrap">The Maugites</span>
+                    <span class="tag nowrap">The Mirror Master</span>
+                    <span class="tag nowrap">Gorilla Grodd</span>
+                    <span class="tag nowrap">The Pied Piper</span>
+                    <span class="tag nowrap">The Weather Wizard</span>
+                    <span class="tag nowrap">The Trickster</span>
+                    <span class="tag">Zoom</span>
+                    <span class="tag">Revers</span> 
                   </p>
                 </section>
               </div>
@@ -246,5 +265,14 @@
         </div>
       </article>
     </main>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/js/site.js"></script>
+    <script>
+      document.getElementById("the-flash").addEventListener("click", function() {
+        console.log(this.childNodes)
+			this.childNodes[1].play();
+		});
+    </script>
   </body>
 </html>

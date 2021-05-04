@@ -1,3 +1,6 @@
+::-moz-selection{
+    background: #f6cb49;
+}
 ::selection{
     background: #f6cb49;
 }
@@ -20,3 +23,12 @@
 .tags.uppercase{
     text-transform: uppercase;
 }
+
+#canvas {
+    display: block; 
+    position: fixed; 
+  }
+
+  button.audio svg{
+      vertical-align: unset;
+  }
