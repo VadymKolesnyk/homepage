@@ -1,3 +1,6 @@
+::-moz-selection{
+    background: #f6cb49;
+}
 ::selection{
     background: #f6cb49;
 }
